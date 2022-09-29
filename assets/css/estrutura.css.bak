@@ -1,0 +1,363 @@
+
+/* clean CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+
+html {background: #000 url('../images/loading.svg') no-repeat center; width: 100%; height: 100%; min-height: 100%; overflow-x: hidden;}
+body {display: none; font-family: 'Roboto', sans-serif; box-sizing: border-box; background: #000; font-size: 16px; line-height: 1.3rem; height: 100%; min-height: 100% !important;}
+
+/* Variaveis: */
+	:root {
+		--principal: #FFF;
+		--secundaria: #4472C4;
+		--terciaria: #0d0d3c;
+		--destaque-tabela: #1e3154;
+
+		--margin: 30px;
+		--tempo: 400ms;
+		--radius: 5px;
+	}
+/* Variaveis: */
+
+/* Seleção: */
+	::selection {background: var(--secundaria); color:#FFF; text-shadow: 0px 2px 1px rgba(0,0,0,0.2);}
+	::-webkit-selection {background: var(--secundaria); color:#FFF; text-shadow: 0px 2px 1px rgba(0,0,0,0.2);}
+	::-moz-selection {background: var(--secundaria); color:#FFF; text-shadow: 0px 2px 1px rgba(0,0,0,0.2);}
+/* Seleção: */
+
+/* Efeitos de transição: */
+	a {-webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo);}
+	a:hover { opacity: 0.65 }
+/* :Efeitos de transição */
+
+/* Animações: */
+	@-webkit-keyframes float { from, to {transform: translate3d(0, 0, 0);} 50% {transform: translate3d(0, -20px, 0);}}
+	@keyframes float { from, to {transform: translate3d(0, 0, 0);} 50% {transform: translate3d(0, -20px, 0);}}
+/* :Animações */
+
+/* Elementos: */
+	h1, h2 {display: block; font-weight: 700; clear: both;}
+	h1 {font-size: 4rem; line-height: 4.3rem;}
+	h2 {font-size: 2rem; line-height: 2.2rem;}
+	h3 {}
+	h4 {}
+	i {display: inline-block;}
+	p {font-size: 1rem; line-height: 1.3rem;}
+	strong {font-weight: 700;}
+	br {clear: both; display: block;}
+	a {color: var(--principal); text-decoration: none; font-size: 20px }
+	img {display: block; outline: none;}
+	section {position: relative;}
+	article {position: relative; width: 100%; box-sizing: border-box;}
+	article:after {content: ''; display: block; clear: both;}
+/* :Elementos */
+	
+/* Botões: */
+	.Btn { display: inline-block; height: 55px; width: 320px; border-radius: 3px; background-color: var(--secundaria); line-height: 55px; }
+	.Btn:hover, .Btn-primary:hover, .botaotopo:hover, #Whatsapp:hover { filter: brightness(128%); opacity: initial; }
+	.Btn span {position: relative; padding-right: 20px;}
+	.Btn span i {position: absolute; right: -5px; top: 3px;}
+	.Btn-primary { line-height: 60px; font-size: 20px; margin-right: 20px; display: inline-block; height: 60px; width: 250px; border-radius: 3px; background: #4472c4; background: linear-gradient(0deg, #4472c4 0%, #073d9e 100%); box-shadow: 0px 0px 19px 3px rgb(0 56 160); }
+	/* .Btn-prymary:hover { box-shadow: 0px 0px 19px 3px rgb(255 119 167 / 62%); } */
+	.Btn-secondary { line-height: 60px; display: inline-block; height: 60px; width: 250px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.1); border: 2px solid; }
+/* :Botões */
+
+/* Backgrounds: */
+	.fullscreen-bg {width: 100%; height: 100%; background: no-repeat center center; background-size: cover;}
+/* :Backgrounds */
+	
+/* Header: */
+	header { height: 70px; width: 100%; background-color: var(--terciaria); color: #fff; z-index: 5; position: fixed; top: 0; left: 0; right: 0; margin: 0 auto }
+	header article { position: relative; z-index: 10; padding: 0; max-width: 1600px; height: 100%; padding: 0 100px; }
+	header a { font-size: 1.1rem;}
+	header .box-links { display: inline-block; float: left; width: 331px; height: 24px; padding-top: 23px }
+	header .box-links a { display: block; float: left; padding-right: 24px; font-size: 18px; }
+	header .box-links a:last-child {padding-right: 0; }
+	header .box-social { width: 240px; height: 70px; float: right; box-sizing: border-box; margin-right: 50px; display: inline-flex; align-items: center; justify-content: center; }
+	header .box-social a { width: 23px; padding: 0 8px; text-align: center; font-size: 24px; }
+	.cta-button { height: 45px; width: 180px; border-radius: 3px; background-color: #05A052; float: right; display: block; margin: 12px 5px; text-align: center; line-height: 42px; }
+	header .botaotopo { width: 150px!important; height: 35px!important; margin-right: 4px; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px!important; background: #4472c4; background: linear-gradient(0deg, #4472c4 0%, #073d9e 100%); }
+/* :Header */
+
+.bg { width: 100%; }
+
+
+/* Principal: */
+	#principal { text-align: center; margin-top: 70px; z-index: 0; }	
+	#principal h1 { width: 95%; color: var(--secundaria); font-size: 33px; line-height: 49px; font-weight: bold; text-align: center; text-shadow: 1px 7px 10px #000000; text-transform: uppercase; margin: auto; }
+	#principal h1 strong { display: block; color: #fff; font-size: 50px; margin: 5px 0px; }
+	#principal h3 { font-size: 20px; max-width: 820px; color: #fff; margin: auto; margin-bottom: 50px; line-height: 34px; }
+/* :Principal */
+	
+	/* Menu Abas: */
+	#menu-abas h2 { text-align: center; font-size: 42px; color: #fff; margin: auto; line-height: 48px; margin-top: 97px }	
+	#menu-abas { width: 1180px; margin: auto; margin-top: 25px; }
+	.menu-links { width: 100%; height: 45px; border-bottom: 1px solid rgba(216, 216, 216, 0.5); padding-left: 110px; padding-right: 110px; box-sizing: border-box; }
+	.menu-links a { font-size: 22px; opacity: 0.70; display: inline-block; width: 33%; height: 45px; text-align: center; margin-top: -3px; }
+	.menu-links .ativo { color: #B6A168; opacity: 1; font-size: 22px; border-bottom: 5px solid #B6A168; font-weight: bold; }
+	#menu-abas p { max-width: 980px; display: block; margin: auto; font-size: 22px; line-height: 32px; font-weight: 300; text-align: justify; margin-top: 50px; color: var(--principal); font-family: Roboto; }
+	#menu-abas #espetaculo, #menu-abas #exposicao { display: none }
+	.logo-parceiros { margin: auto; margin-top: 20px; margin-bottom: 30px }
+	#videolol { width: 700px; display: block; max-width: 100%; margin: auto; margin-top: 50px; }
+/* :Menu Abas */
+
+/* Ingressos: */
+	#ingressos { width: 1180px; max-width: 100%; margin: auto; border-top: 1px solid rgba(216, 216, 216, 0.5); }
+	#ingressos h1 { display: block; width: 980; height: 66px; text-align: center; color: var(--secundaria); font-size: 38px; margin-top: 43px; }	
+	#ingressos .card h2 { color: #FFFFFF; font-family: Roboto; font-size: 20px; font-weight: 500; line-height: initial; text-align: center; margin: 0 30px 5px 30px; }	
+	/* #ingressos .wrapper-card { max-width: 1180px; margin: auto; margin-bottom: 50px; text-align: center; display: grid; grid-template-columns: auto auto auto auto; justify-items: center; justify-content: center; } */
+	#ingressos .wrapper-card { max-width: 1180px; width: 100%; margin: auto; margin-bottom: 50px; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; }
+	/* #ingressos .wrapper-card:nth-of-type(2) { grid-template-columns: auto auto auto auto } */
+	#ingressos .card { display: flex; justify-content: center; align-items: center; flex: 1 0 20%; min-height: 85px; width: 100%; max-width: 20%; border-radius: 20px; margin: 20px 0 }
+	#ingressos .card a { display: grid; align-content: center; align-items: center; justify-content: center; height: 100%; width: 85%; max-width: 250px; border-radius: 20px; line-height: 55px; background-color: var(--secundaria); overflow: hidden; }
+	#ingressos .card p { color: #FFFFFF; font-family: Roboto; font-size: 14px; font-weight: 300; line-height: 24px; text-align: center; margin: auto; }
+	#ingressos .ingressos-mini-box { width: 990px; margin: auto; color: #fff; padding: 20px 40px; box-sizing: border-box; text-align: justify; background-color: rgba(255, 255, 255, 0.1); }
+	#ingressos .ingressos-mini-box-info a { font-size: 18px; line-height: 24px; font-weight: 300; padding-left: 62px; display: block; width: 100%; box-sizing: border-box; padding-top: 13px; }
+	#ingressos .ingressos-mini-box-info { height: 50px; font-size: 18px; width: 990px; border: 1px solid #1F1F1F; color: var(--principal); background-color: rgba(255, 255, 255, 0.2); line-height: 24px; box-sizing: border-box; margin: auto; }
+	#ingressos .ingressos-mini-box-info.first { margin-top: 50px }
+	#ingressos .ingressos-mini-box-info p { margin-left: 62px; margin-top: 15px; }
+	#ingressos .box-social { width: 190px; height: 32px; display: block; margin: auto; margin-top: 40px; margin-bottom: 40px; text-align: center; }
+	#ingressos .box-social a { font-size: 32px; margin: 0 15px; }
+	#ingressos img { margin: auto; z-index: 5; }
+	#ingressos .ingressos-mini-box.Fechado { display: none }
+	#ingressos .logofooter { max-width: 200px; }
+	#ingressos .ingressostxt p { color: #fff; line-height: 1.7; margin-top: 70px; margin-bottom: 70px; }
+	#ingressos .aviso { color: #fff; line-height: 25px; margin: 20px; text-align: center; }
+/* :Ingressos */
+
+/* Parceiros: */
+	.parceiros {
+		width: 100%;
+		margin: auto;
+	}
+/* Parceiros: */
+
+/* Icones: */
+	#icones { max-width: 1010px; margin: auto; padding-top: 20px }
+	#icones h1 { display: block; margin: auto; width: 100%; height: 66px; text-align: center; color: var(--secundaria); font-size: 38px; margin-top: 43px; margin-bottom: 40px }
+	#icones .wrapper-card { width: 100%; max-width: 100%; margin: auto; margin-top: 50px; text-align: center; height: 200px; display: flex; justify-content: center; align-items: center; }
+	#icones .card { display: flex; flex-direction: column; height: auto; width: 50%; color: #fff; position: relative; }
+	#icones .card .img-wrapper { display: flex; justify-content: center; align-items: center; height: 80px; }
+	#icones .card img { display: flex; text-align: center; height: 70px }
+	#icones h2 { font-size: 26px; line-height: 30px; margin: auto; margin-top: 20px; max-width: 330px; }
+	#icones p { font-size: 16px; line-height: 20px; font-weight: 300; height: 42px; margin-top: 10px }
+	#icones .box-icones { height: 100px; width: 100%; background-color: rgba(255, 255, 255, 0.1); margin: auto; }
+	#icones .box-icones p {height: 54px; width: 856px; color: #D8D8D8; font-family: Roboto; font-size: 22px; font-weight: 300; line-height: 26px; text-align: justify; margin: auto; padding-top: 25px; }
+	#icones .local { display: none; transition: all 0.5s; }
+	#icones .local.active { display: block; }
+/* :Icones */
+
+/* Valores: */	
+	#valores { max-width: 1180px; margin: auto; margin-top: 75px }
+	#valores h1 { text-align: center; margin: auto; font-size: 38px; line-height: 24px; color: var(--secundaria); margin-bottom: 20px }
+	#valores h2 { text-align: center; width: 100%; margin: auto; font-size: 30px; line-height: normal; color: var(--principal); font-weight: normal }
+	#valores table { width: 85%; color: #fff; margin: auto; margin-top: 35px; margin-bottom: 62px }
+	#valores table td { padding: 15px; display: table-cell; text-align: center; background-color: rgba(216, 216, 216, 0.2); vertical-align: middle; font-size: 22px; font-weight: normal; border: 2px solid #000; line-height: normal; }
+	#valores table td.first { background-color: var(--destaque-tabela); color: #fff; font-weight: bold } 
+	#valores .local { display: none; transition: all 0.5s; }
+	#valores .local.active { display: block; }
+
+	.menu-locais-links { width: 100%; text-align: center; display: flex; flex-wrap: wrap; line-height: initial; align-items: center; justify-content: center;  }
+	
+	/* .menu-locais-links:after { content: ''; width: 58%; display: block; height: 1px; background-color: #fff; margin: auto; margin-top: 20px; margin-bottom: 50px; } */
+	.menu-locais-links a { font-size: 32px; cursor: pointer; color: #c3c3c3; transition: all 0.3s; display: flex; justify-content: center; align-items: center; flex: 1 0 calc(20% - 80px); padding: 30px 20px; border-bottom: 1px solid #fff; height: 40px; max-width: 20%; }
+	.menu-locais-links a.active, .menu-locais-links a:active { font-weight: bold; color: #fff; border-bottom: 5px solid; opacity: 1; }
+	
+/* :Valores */
+
+/* Footer: */
+	footer { height: auto; min-height: 110px; width: 100%; background-color: var(--terciaria); margin: auto; margin-top: -90px; }
+	footer span { width: 100%; display: block; height: 1px; background-color: #666; }
+	footer img { margin: auto; margin-bottom: 33px; padding-top: 133px; }
+	
+	footer article { padding: 23px }
+	.footer-card { width: 480px; float: left; margin-left: 20px }
+	.footer-card p { color: #ccc }
+	footer .marcasDesk { max-width: 988px; }
+	footer .marcasDesk:nth-child(2), footer .marcasDesk:nth-child(3), footer .marcasDesk:nth-child(4), footer .marcasDesk:nth-child(5) { padding-top: 0; }
+	footer .parceiros { text-align: center;padding-top: 110px;font-size: 20px;color: #fff;padding-bottom: 20px; }
+	footer .parceiros:last-of-type { padding-top: 10px; }
+
+
+	#Copyright {display: block; width: 100%; color: #CCC; background-color: #333;}
+/* :Footer */
+
+/* Página Home: */
+	.Home {}
+/* :Página Home */
+
+/* Página: */
+/* :Página */
+
+	#Whatsapp {
+		display: block !important;
+		width: 30px;
+		height: 30px;
+		padding: 10px 10px 10px 10px;
+		position: fixed;
+		z-index: 999;
+		bottom: 20px;
+		border-radius: 50%;
+		right: 15px;
+		background-color: #0bce4a;
+		border: 5px solid #fff;
+		text-align: center;
+	}
+
+	.fab {
+		font-size: 30px;
+	}
+
+/* -------------------------------- Versionamento Desktop: -------------------------------- */
+
+@media screen and (min-width: 901px) { 
+	.DesktopItem {display: inline-block !important;}
+	.MobileItem {display: none !important;}
+
+	footer .marcasDesk { display: block !important; }
+
+/* Elementos Desktop: */
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	article {padding: 50px; max-width: 1440px; margin: 0 auto;}
+/* :Elementos Desktop */
+
+/* Header Desktop: */
+	header {}
+/* :Header Desktop */
+
+/* Footer Desktop: */
+	footer {}
+	#Copyright {}
+/* :Footer Desktop */
+
+/* Página Home Desktop: */
+	.Home {}	
+/* :Página Home Desktop */
+
+}
+/* -------------------------------- Versionamento Desktop: -------------------------------- */
+
+/* -------------------------------- Versionamento Mobile: --------------------------------- */	
+
+@media screen and (max-width: 900px) { 
+	.DesktopItem {display: none !important;}
+	.MobileItem {display: inline-block !important;}
+		
+/* Elementos Mobile: */
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	article {padding: 20px;}
+/* :Elementos Mobile */
+
+/* Header Mobile: */
+	header {}
+/* :Header Mobile */
+
+/* Footer Mobile: */
+	footer { padding: 0 20px; box-sizing: border-box; text-align: center; height: initial; }
+
+	#Copyright {}
+/* :Footer Mobile */
+
+/* Página Home Mobile: */
+	.Home {}
+	img { max-width: 100% }
+	.bg { max-width: initial; }
+	article { padding: 15px }
+	.Btn-primary { margin-right: 0; width: 220px; margin-top: 25px }
+	.Btn-secondary { background: none; border: none; margin-top: 15px; text-decoration: underline; }
+/* :Página Home Mobile */
+
+/* Principal: */
+	#principal { margin-top: 0; }
+	#principal article img { padding: 0 20px; box-sizing: border-box; margin-top: 60px; }
+	/* #principal h1 { font-size: 28px; line-height: 30px; height: initial; width: initial; padding-top: 40px; } */
+	#principal h1 { font-size: 25px; line-height: 40px; height: initial; width: initial; }
+	#principal h1 strong { font-size: 35px; display: block; margin: 18px 0; }
+	#principal h3 { font-size: 16px; line-height: 30px; margin: 20px }
+	/* :Principal */
+	
+	/* Menu Abas: */
+	#menu-abas h2 { font-size: 25px; line-height: 30px; margin-top: 65px; }
+	#menu-abas { max-width: 100%; margin-top: 30px; height: auto; }
+	#menu-abas p { font-size: 16px; line-height: 26px; text-align: left; padding: 0 20px; }
+	#exposicao a { font-size: 12px; }
+	.menu-links { padding: 0; height: 30px }
+	.menu-links a { font-size: 9px; width: 33.33%; height: 30px; line-height: 25px; float: left; }
+	.menu-links .ativo { border-bottom: 3px solid #B6A168; font-size: 9px; width: 33.33% }
+	.logo-parceiros { margin-top: 20px; max-width: 100%; margin-left: 0; padding: 0 20px; box-sizing: border-box; height: initial; }
+	#megashow { margin-bottom: 60px!important; }
+	.menu-locais-links a { font-size: 13px; flex: 1 0 calc(50% - 80px); height: 30px; padding: 15px 20px; }
+/* :Menu Abas */
+
+/* Ingressos: */
+	#ingressos { width: initial; border-top: 0; padding: 0 20px; box-sizing: border-box; }
+	#ingressos h1 { font-size: 22px; line-height: 30px; margin-top: 35px; margin-bottom: 20px; text-align: center; height: initial; }
+
+	#ingressos .card { width: 100%; max-width: 50%; height: auto; margin: auto; display: flex; justify-content: center; flex: 1 0 50%; }
+
+	#ingressos .card h2 { width: initial; font-size: 18px; line-height: 21px; margin: initial; text-align: center; height: initial; }
+	#ingressos .card p { width: initial; font-size: 14px; line-height: 16px; margin: initial; text-align: center; height: initial; }
+	#ingressos .card a { width: 70%; margin: initial; float: initial; font-size: 14px; line-height: 45px; padding: 10px; padding-top: 5px; box-sizing: border-box; min-height: 65px; margin-top: 15px; }	
+	#ingressos .ingressos-mini-box { width: initial; padding: 20px; }
+	#ingressos .ingressos-mini-box p { font-size: 10px; line-height: 13px }
+	#ingressos .ingressos-mini-box-info, #ingressos .ingressos-mini-box-info.first { width: initial; }
+	#ingressos .ingressos-mini-box-info a { font-size: 14px; line-height: 50px; padding: 0 20px; width: 100%; line-height: 15px; font-weight: 400; height: 50px; padding-top: 10px; padding-right: 70px }
+	#ingressos .ingressos-mini-box-info.first a { padding-top: 17px }
+	#ingressos .ingressostxt p { margin-top: 0; }
+	.seta { float: right; margin-top: -33px; margin-right: 20px; -webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo); }
+	.setacima { -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari 3-8 */ transform: rotate(180deg); }
+	.setabaixo { -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Safari 3-8 */ transform: rotate(0deg); }
+
+	#ingressos .wrapper-card { grid-template-columns: initial; margin-bottom: initial; }
+	/* #ingressos .wrapper-card:nth-of-type(2) { grid-template-columns: initial; } */
+	#ingressos .box-social { margin-bottom: 10px; }
+	#ingressos .aviso { font-size: 13px; text-align: center; }
+	
+/* :Ingressos */
+
+/* Icones: */
+	#icones { padding: 0 10px; margin-bottom: 70px }
+	#icones h1 { height: initial; font-size: 22px; line-height: 24px; width: 100%; height: 50px; margin-bottom: 7px }
+	#icones h3 { color: #fff; font-size: 16px; margin-bottom: 30px }
+	#icones h2 { font-size: 14px; line-height: 24px; font-weight: 400; margin-top: initial; text-align: center; width: 100%; max-width: 100%; }
+	#icones .wrapper-card { text-align: left; height: auto; align-items: flex-start; }
+	#icones p { float: left; font-size: 15px; margin-top: 5px; width: 215px; display: block; height: auto; }
+	#icones .card { min-height: 90px; margin: 20px; }
+	#icones .card:last-child { border-bottom: 0 }
+	#icones .card .img-wrapper { text-align: center; min-height: 100px; }
+	#icones .card img { max-height: 55px }
+	#icones .box-icones { margin-top: 50px }
+	#icones .box-icones p { font-size: 12px; width: initial; height: initial; line-height: 16px; text-align: left; padding: 17px }
+/* :Icones */
+
+/* Valores: */
+	#valores { margin-top: 30px; padding: 0 20px; }
+	#valores h1 { font-size: 22px; line-height: 24px; margin: initial; }
+	#valores h2 { font-size: 18px; line-height: 24px; margin: auto; margin-top: 5px;  }
+	#valores table { max-width: 100%; margin: auto; width: initial; height: initial; margin-top: 20px; margin-bottom: 20px }
+	#valores table td { width: 25%; height: 28px; font-size: 12px; padding: 5px; }
+
+	.menu-locais-links:after { width: 70%; }
+/* :Valores */
+
+	footer article { padding: 0 }
+	footer .footer-card { width: 100%; float: initial; margin: initial; margin: 20px 0 }
+	footer .footer-card p { font-size: 16px; line-height: 21px }
+	footer .footer-card a { width: 150px; height: 45px; float: initial; font-size: 14px; margin: 20px auto; line-height: 45px }
+	footer img:nth-child(6), footer img:nth-child(7), footer img:nth-child(8), footer img:nth-child(9) { padding-top: 0; }
+	footer .parceiros { font-size: 14px; padding-bottom: 30px; }
+	footer .marcasDesk { max-width: 100%; }    	
+}
+
+
+@media screen and (max-width: 330px) { /* correções para o Iphone 5/SE */
+	h1 {}
+}
+/* -------------------------------- :Versionamento Mobile --------------------------------- */	
