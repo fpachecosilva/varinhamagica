@@ -33,11 +33,11 @@ jQuery(document).ready(function () {
 	// :Reload on resize
 
 	// Reload not 'https':
-	// var url = $(location).attr('href');
+		// var url = $(location).attr('href');
 
-	// if (url.indexOf('http') == 0) {
-	// 	$(location).attr('href', url.replace('http', 'https'));
-	// }
+		// if (url.indexOf('http') == 0) {
+		// 	$(location).attr('href', url.replace('http', 'https'));
+		// }
 	// : Reload not 'https'
 
 	// Scroll suave para ids

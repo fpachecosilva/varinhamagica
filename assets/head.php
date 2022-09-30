@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="keywords" content="<?php echo $Tags ?>" />
 <meta name="author" content="<?php echo $empresa ?>" />
-<meta property="article:author" content="<?php echo $facebook ?>" />
+<!-- <meta property="article:author" content="<?php echo $facebook ?>" /> -->
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
 <meta http-equiv="content-language" content="pt_BR" />

@@ -12,7 +12,21 @@
                 "modelo4": true
             },
             "local": "via parque shopping",
-            "link": "https://olhaoingresso.showare.com.br/Performance/ShoWareFrontEndPerPerformance.aspx?eventid=433&filter=day&websaleschannelkey=internetchaim&orig=varj​"
+            "link": "https://olhaoingresso.showare.com.br/Performance/ShoWareFrontEndPerPerformance.aspx?eventid=454&filter=day&websaleschannelkey=internetchaim&orig=varj"
+        },
+        {
+            "ativo": "",
+            "sigla": "sp",
+            "nome": "São Paulo",            
+            "horarios": {
+                "linha1": "Quinta e Sexta - 17h30 e 20h00",
+                "linha2": "Sáb e Dom - 10h30, 13h00, 15h30, 18h00, e 20h30"
+            },
+            "tabelas": {
+                "modelo4": true
+            },
+            "local": "shopping ibirapuera",
+            "link": "https://olhaoingresso.showare.com.br/Performance/ShoWareFrontEndPerPerformance.aspx?eventid=455&filter=day&websaleschannelkey=internetchaim&orig=vasp"
         }
     ]
 }

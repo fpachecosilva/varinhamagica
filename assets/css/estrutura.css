@@ -70,7 +70,7 @@ body {display: none; font-family: 'Montserrat', sans-serif; box-sizing: border-b
 	header { height: 70px; width: 100%; color: #fff; z-index: 5; position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; backdrop-filter: blur(3px); background-color: #352458f5 }
 	header article { position: relative; z-index: 10; padding: 0; max-width: 1600px; height: 100%; padding: 0 100px; }
 	header a { font-size: 1.1rem;}
-	header .box-links { display: inline-block; float: left; width: 331px; height: 24px; padding-top: 23px }
+	header .box-links { display: none; float: left; width: 331px; height: 24px; padding-top: 23px }
 	header .box-links a { display: block; float: left; padding-right: 24px; font-size: 18px; }
 	header .box-links a:last-child {padding-right: 0; }
 	header .box-social { width: 240px; height: 70px; float: right; box-sizing: border-box; margin-right: 50px; display: inline-flex; align-items: center; justify-content: center; }

@@ -36,27 +36,21 @@
 	<section id="principal">
 		<img class="bg" src="<?php echo $images ?>bg.jpg">
 		<article>
-			<h1>​<strong>VARINHA MÁGICA DINING EXPERIENCE​</strong></h1>
+			<h1>​<strong>VARINHA MÁGICA EXPERIENCE​</strong></h1>
 		</article>
 
-		<h3 id="ancora-abas">
+		<!-- <h3 id="ancora-abas">
 			A EXPERIÊNCIA GASTRONÔMICA CONSCIENTIZA SOBRE A IMPORTÂNCIA DA PRESERVAÇÃO DA NATUREZA EM AVENTURA INESQUECÍVEL PARA TODA A FAMÍLIA
-		</h3>
+		</h3> -->
 		<a class="Btn-primary" href="#ingressos">Comprar</a>
 	</section>
 
 	<section id="menu-abas">
 		<p id="megashow">
-		Muita diversão, interatividade e educação são as pedidas de Planeta Animal Experience. O grandioso passeio é uma excelente opção de lazer para toda a família e levará você a um mundo mágico de aventura que viajará do Jurássico à Amazônia e do Oceano à Era do Gelo. Além de toda a diversão, o público também é convidado a se tornar um herói do meio ambiente e irá interagir com as diferentes instalações tendo como propósito despoluir oceanos, reflorestar áreas devastadas, apagar incêndios, frear o aquecimento global, entre outras iniciativas a favor do nosso planeta.
-			<br><br>
-			Com a plateia em formato diner*, você viajará por cinco ambientes incríveis e distintos. Cada uma dessas instalações trará surpresas cheias de tecnologia, interatividade e educação. Em meio a cenografia, réplicas em tamanho real de girafas, elefantes, ursos polares, mamutes e dinossauros irão interagir pelo espaço em performances e movimentos impressionantes ao redor do público.
-			<br><br>
-			O cardápio é composto de uma seleção variada e deliciosa de receitas com menu completo. Entre entradas, pratos principais e sobremesas, o público poderá escolher opções que vão desde saladas e costela ao barbecue com batatas salteadas, até hambúrgueres tradicionais e vegetariano, massas, risotos, nhoques e parmeggianas de frango e vermelha. As sobremesas não ficam atrás: são diversas opções com destaque para o bolo red velvet e o tradicional pudim.
-			<br><br>
-			Crianças são pagantes a partir dos 24 meses.
+			Um mundo extraordinário onde você é o grande herói, e com poderes como nunca imaginou. Você está convocado para a grande batalha do mundo bruxo, com muitas poções, feitiços e aventura. Varinha mágica, o restaurante temático onde a magia acontece, de verdade!​
 		</p>
 
-		<!-- <video id='videolol' src="<?php echo $images ?>cinderela.mp4" preload="auto" type="video/mp4" controls poster=""></video> -->
+		<video id='videolol' src="<?php echo $images ?>varinhamagica.mov" preload="auto" type="video/mp4" controls poster=""></video>
 	</section>
 
 	<!-- <div class="parceiros DesktopItem">
@@ -68,7 +62,7 @@
 		<h1 class="">VARINHA MÁGICA EXPERIENCE</h1>
 
 		<div class="menu-locais-links">
-			<?
+			<?php
 			foreach ($data->locais as $local) {
 				echo '
 					<a class="'.$local->ativo.'"local="'.$local->sigla.'">'.$local->nome.'</a>
@@ -77,7 +71,7 @@
 			?>
 		</div>
 
-		<?
+		<?php
 		foreach ($data->locais as $local) {
 			echo '
 				<div class="local '.$local->sigla.' '.$local->ativo.'">
@@ -112,7 +106,7 @@
 		</p>		
 		
 		<div class="wrapper-card">
-			<?
+			<?php
 			foreach ($data->locais as $local) {
 				echo'
 					<div class="card">
@@ -133,6 +127,6 @@
 	</section>
 
 	<?php include 'assets/footer.php'; ?>
-	<a href="https://api.whatsapp.com/send?phone=5511&amp;text=Oi,%20vim%20através%20do%20website%20Cinderela%20Experience" target="_blank" id="Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+	<a href="https://api.whatsapp.com/send?phone=5511&amp;text=Oi,%20vim%20através%20do%20website%20Varinha%20Magica%20Experience" target="_blank" id="Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 </body>
 </html>
