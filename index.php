@@ -127,6 +127,6 @@
 	</section>
 
 	<?php include 'assets/footer.php'; ?>
-	<a href="https://api.whatsapp.com/send?phone=5511&amp;text=Oi,%20vim%20através%20do%20website%20Varinha%20Magica%20Experience" target="_blank" id="Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+	<a href="https://api.whatsapp.com/send?phone=5511916943975&amp;text=Oi,%20vim%20através%20do%20website%20Varinha%20Magica%20Experience" target="_blank" id="Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 </body>
 </html>
