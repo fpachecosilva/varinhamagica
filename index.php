@@ -50,7 +50,7 @@
 			Um mundo extraordinário onde você é o grande herói, e com poderes como nunca imaginou. Você está convocado para a grande batalha do mundo bruxo, com muitas poções, feitiços e aventura. Varinha mágica, o restaurante temático onde a magia acontece, de verdade!​
 		</p>
 
-		<video id='videolol' src="<?php echo $images ?>varinhamagica.mov" preload="auto" type="video/mp4" controls poster=""></video>
+		<video id='videolol' src="<?php echo $images ?>varinhamagica.mp4" preload="auto" type="video/mp4" controls poster=""></video>
 	</section>
 
 	<!-- <div class="parceiros DesktopItem">
