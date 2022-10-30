@@ -43,8 +43,8 @@
 	document.write(' <link type="text/css" rel="stylesheet" href="<?php echo $url ?>assets/css/estrutura.css?v'+randomNumber+'" media="all" /> ')
 </script>
 
-<!-- Global site tag (gtag.js) - Google Ads: 10990787138 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10990787138"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 11012355706 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11012355706"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -52,7 +52,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'AW-10990787138');
+    gtag('config', 'AW-11012355706');
 </script>
 
 
@@ -101,7 +101,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!-- TAG GOOGLE DE REMARKETING -->
 <script>
     gtag('event', 'page_view', {
-        'send_to': 'AW-10990787138',
+        'send_to': 'AW-11012355706',
         'value': 'replace with value',
         'items': [{
             'google_business_vertical': 'custom'

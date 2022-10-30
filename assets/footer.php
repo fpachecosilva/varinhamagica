@@ -4,7 +4,7 @@
 	</footer>
 
 	<script type="text/javascript" src="<?php echo $url ?>assets/javascript/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo $url ?>assets/javascript/estrutura.js?v4"></script>	
+	<script type="text/javascript" src="<?php echo $url ?>assets/javascript/estrutura.js?v6"></script>	
 
 	<script type="text/javascript">
 		

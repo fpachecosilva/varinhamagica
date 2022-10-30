@@ -1,10 +1,3 @@
-/* 
-	Hello, guys!! :)
-	JS desenvolvido pela bs.agency em 2019.
-
-	Façam bom uso :)
-*/
-
 jQuery(document).ready(function () {
 
 	// Variáveis:
@@ -41,16 +34,42 @@ jQuery(document).ready(function () {
 	// : Reload not 'https'
 
 	// Scroll suave para ids
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top;
+	// $('a[href^="#"]').on('click', function (e) {
+	// 	e.preventDefault();
+	// 	var id = $(this).attr('href'),
+	// 		targetOffset = $(id).offset().top;
 
-		$('html, body').animate({
-			scrollTop: targetOffset - 100
-		}, 400);
-	});
+	// 	$('html, body').animate({
+	// 		scrollTop: targetOffset - 100
+	// 	}, 400);
+	// });
 	// :Scroll suave para ids
+
+	
+	// MENU
+	let menu = document.querySelector('.menu .center')
+	let header = document.querySelector('header')
+	let menuItens = [...document.querySelectorAll('header a')]
+		
+	menu.addEventListener('click', ()=> {
+		menu.classList.toggle('open')
+		header.classList.toggle('open')
+	})
+
+	for (i in menuItens) {
+		menuItens[i].addEventListener('click', (e)=>{
+			menu.classList.toggle('open')
+			header.classList.toggle('open')			
+			let href = e.target.attributes.href.nodeValue.replace('#','')
+			
+			const contentDivs = document.querySelectorAll('.content-item')
+			contentDivs.forEach(box => {				
+				box.classList.remove('open')
+			})
+			let content = document.querySelector(`#${href}`)
+			content.classList.add('open')
+		})
+	}
 
 	// Navegacao abas
 	$('.menu-links a').on('click', function () {
