@@ -155,7 +155,7 @@
 	</section>
 
 	<section id="valores">
-		<?php include 'assets/includes/tabelas.php'; ?>		
+		<?php include 'assets/includes/tabelas.php'; ?>
 	</section>
 
 	<section id="ingressos">
