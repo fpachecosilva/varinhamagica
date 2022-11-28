@@ -5,8 +5,8 @@
             "sigla": "rj",
             "nome": "Rio de Janeiro",            
             "horarios": {
-                "linha1": "Quinta e Sexta - 17h30 e 20h00",
-                "linha2": "Sáb e Dom - 10h30, 13h00, 15h30, 18h00, e 20h30"
+                "linha1": "Quinta e Sexta - 17h30 às 20h00",
+                "linha2": "Sáb e Dom - 10h30 às 20h30"
             },
             "tabelas": {
                 "modelo4": true
@@ -19,8 +19,8 @@
             "sigla": "sp",
             "nome": "São Paulo",            
             "horarios": {
-                "linha1": "Quinta e Sexta - 17h30 e 20h00",
-                "linha2": "Sáb e Dom - 10h30, 13h00, 15h30, 18h00, e 20h30"
+                "linha1": "Quinta e Sexta - 17h30 às 20h00",
+                "linha2": "Sáb e Dom - 10h30 às 20h30"
             },
             "tabelas": {
                 "modelo4": true
