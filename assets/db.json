@@ -23,7 +23,8 @@
                 "linha2": "Sáb e Dom - 10h30 às 20h30"
             },
             "tabelas": {
-                "modelo4": true
+                "modelo4": false,
+                "modelo5": true
             },
             "local": "shopping ibirapuera",
             "link": "https://olhaoingresso.showare.com.br/Performance/ShoWareFrontEndPerPerformance.aspx?eventid=455&filter=day&websaleschannelkey=internetchaim&orig=vasp"
